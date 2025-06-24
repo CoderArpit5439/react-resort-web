@@ -1,0 +1,24 @@
+.facility-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  /* background-image: url('/images/home-1/feature-imgs-1.jpg'); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  transition: width 0.5s ease;
+  z-index: 0;
+}
+
+.facility-box:hover::before {
+  width: 100%;
+}
+
+.facility-title {
+  color: white;
+  font-weight: 500;
+  z-index: 1;
+  position: relative;
+}
