@@ -1,42 +1,32 @@
 import React, { useState } from "react";
 import { Navigation, Pagination, Autoplay, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import logo from '../assets/logo.jpeg'
+import logo from "../assets/logo.jpeg";
 
 const LandingPage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   const testimonials = [
     {
-      text: "They call him Flipper Flipper faster than lightning no one you see is smarter than he black gold...",
-      name: "ANGELO MATHEWS",
+      text: "Booked a farmhouse near Indore—BBQ, bonfire and stargazing. Perfect weekend!",
+      name: " Ritu & Amitt, Indore",
       image: "images/resource/client-thumb-1.jpg",
     },
     {
-      text: "They call him Flipper Flipper faster than lightning no one you see is smarter than he...",
-      name: "ANGELO MATHEWS",
+      text: "“Amazing lakeside farmhouse near Bangalore. Kids loved the games and pool!",
+      name: " Neha & Raj, Bangalore",
       image: "images/resource/client-thumb-2.jpg",
     },
     {
-      text: "They call him Flipper Flipper faster than lightning no one you see is smarter than he...",
-      name: "ANGELO MATHEWS",
+      text: "Outdoor barbecue at a farmhouse in Goa made our anniversary special. Highly recommend!",
+      name: "” Sanya & Vikram, Goa",
       image: "images/resource/client-thumb-3.jpg",
     },
     {
-      text: "They call him Flipper Flipper faster than lightning no one you see is smarter than he...",
-      name: "ANGELO MATHEWS",
+      text: "Clear photos, smooth booking—our stay in Rishikesh was unforgettable!",
+      name: " Priya & Sameer,Rishikesh",
       image: "images/resource/client-thumb-1.jpg",
-    },
-    {
-      text: "They call him Flipper Flipper faster than lightning no one you see is smarter than he...",
-      name: "ANGELO MATHEWS",
-      image: "images/resource/client-thumb-2.jpg",
-    },
-    {
-      text: "They call him Flipper Flipper faster than lightning no one you see is smarter than he...",
-      name: "ANGELO MATHEWS",
-      image: "images/resource/client-thumb-3.jpg",
-    },
+    }   
   ];
 
   const roomData = [
@@ -93,9 +83,8 @@ const LandingPage = () => {
       {/* <!-- Main Header / Header Style One--> */}
       <header class="main-header header-style-one">
         {/* <!-- Header Top --> */}
-        <div class="header-top">
+        {/* <div class="header-top">
           <div class="auto-container clearfix">
-            {/* <!-- Top Left --> */}
             <div class="top-left">
               <ul class="clearfix">
                 <li>
@@ -107,7 +96,6 @@ const LandingPage = () => {
               </ul>
             </div>
 
-            {/* <!-- Top Right / Social Icon One --> */}
             <div class="top-right">
               <ul class="social-icon-one clearfix">
                 <li>
@@ -128,24 +116,33 @@ const LandingPage = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <!-- Header Top End --> */}
 
         {/* <!--Header-Upper--> */}
-        <div class="header-upper">
+        <div
+          class="header-upper"
+          style={{ paddingTop: "15px", paddingBottom: "15px" }}
+        >
           <div class="auto-container">
             <div class="clearfix">
               <div class="pull-left logo-outer">
                 <div class="logo">
-                  <a >
-                    <img src={logo} alt="" title="asdf"  width='auto' height='50px'/>
+                  <a>
+                    <img
+                      src={logo}
+                      alt=""
+                      title="asdf"
+                      width="auto"
+                      height="50px"
+                    />
                   </a>
                 </div>
               </div>
 
               <div class="pull-right upper-right clearfix">
                 {/* <!--Info Box--> */}
-                <div class="upper-column info-box">
+                {/* <div class="upper-column info-box">
                   <div class="icon-box">
                     <span class="flaticon-technology"></span>
                   </div>
@@ -157,10 +154,10 @@ const LandingPage = () => {
                       <a >(01) 123 786 4567</a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
 
                 {/* <!--Info Box--> */}
-                <div class="upper-column info-box">
+                {/* <div class="upper-column info-box">
                   <div class="icon-box">
                     <span class="flaticon-pin"></span>
                   </div>
@@ -170,10 +167,10 @@ const LandingPage = () => {
                     </li>
                     <li>A0 Lashley St, Victoria, Australia.</li>
                   </ul>
-                </div>
+                </div> */}
 
                 {/* <!--Info Box--> */}
-                <div class="upper-column info-box">
+                {/* <div class="upper-column info-box">
                   <div class="icon-box">
                     <span class="flaticon-timer"></span>
                   </div>
@@ -183,7 +180,7 @@ const LandingPage = () => {
                     </li>
                     <li>Mon - Sat : 8:00 am to 7:00 pm</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -257,11 +254,11 @@ const LandingPage = () => {
               </nav>
               {/* <!-- Main Menu End--> */}
 
-              <div class="get-btn">
+              {/* <div class="get-btn">
                 <a  class="theme-btn appt-btn">
                   BOOK NOW
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -271,8 +268,8 @@ const LandingPage = () => {
           <div class="auto-container clearfix">
             {/* <!--Logo--> */}
             <div class="logo pull-left">
-              <a  class="img-responsive">
-                <img src={logo} alt="asdf" width='auto' height='50px' />
+              <a class="img-responsive">
+                <img src={logo} alt="asdf" width="auto" height="50px" />
               </a>
             </div>
 
@@ -295,7 +292,7 @@ const LandingPage = () => {
                 </div>
 
                 <div class="navbar-collapse collapse clearfix">
-                  <ul class="navigation clearfix">
+                  {/* <ul class="navigation clearfix">
                     <li class="current dropdown">
                       <a >Home</a>
                       <ul>
@@ -384,7 +381,7 @@ const LandingPage = () => {
                     <li>
                       <a >Contact Us</a>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </nav>
               {/* <!-- Main Menu End--> */}
@@ -398,18 +395,18 @@ const LandingPage = () => {
       <section class="main-slider revolution-slider negative-margin">
         <div class="tp-banner-container">
           <div class="tp-banner">
-            <Swiper autoplay={{ delay: 3000 }} loop={true}>
+            {/* <Swiper autoplay={{ delay: 3000 }} loop={true}>
               <SwiperSlide>
-                <img src="/images/main-slider/1.jpg" />
-                <h3>Welcome to Queenstown</h3>
+                <img src="https://images.unsplash.com/photo-1725113800650-77ca39631859?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <h3>Welcome to Book my farm</h3>
                 <h1>Travel Brings Power & Love</h1>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/images/main-slider/2.jpg" />
-                <h3>Welcome to Queenstown</h3>
+                <img src="https://images.unsplash.com/photo-1709338572945-f1ccb9e765a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGluZGlhJTIwcmVzb3J0c3xlbnwwfHwwfHx8MA%3D%3D" />
+                <h3>Welcome to Book my farm</h3>
                 <h1>Travel is the only thing...</h1>
               </SwiperSlide>
-            </Swiper>
+            </Swiper> */}
             {/* <ul>
                 	
                     <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/1.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
@@ -426,7 +423,7 @@ const LandingPage = () => {
                     data-elementdelay="0.01"
                     data-endelementdelay="0.3"
                     data-endspeed="1200"
-                    data-endeasing="Power4.easeIn"><h3 class="welcome-heading">Welcome to Queenstown</h3></div>
+                    data-endeasing="Power4.easeIn"><h3 class="welcome-heading">Welcome to Book My Farm</h3></div>
                     
                     <div class="tp-caption sfr sfb tp-resizeme"
                     data-x="center" data-hoffset="15"
@@ -457,7 +454,7 @@ const LandingPage = () => {
                     data-elementdelay="0.01"
                     data-endelementdelay="0.3"
                     data-endspeed="1200"
-                    data-endeasing="Power4.easeIn"><h3 class="welcome-heading">Welcome to Queenstown</h3></div>
+                    data-endeasing="Power4.easeIn"><h3 class="welcome-heading">Welcome to Book My Farm</h3></div>
                     
                     <div class="tp-caption sfr sfb tp-resizeme"
                     data-x="center" data-hoffset="15"
@@ -489,7 +486,7 @@ const LandingPage = () => {
                     data-elementdelay="0.01"
                     data-endelementdelay="0.3"
                     data-endspeed="1200"
-                    data-endeasing="Power4.easeIn"><h3 class="welcome-heading">Welcome to Queenstown</h3></div>
+                    data-endeasing="Power4.easeIn"><h3 class="welcome-heading">Welcome to Book My Farm</h3></div>
                     
                     <div class="tp-caption sfr sfb tp-resizeme"
                     data-x="center" data-hoffset="15"
@@ -517,7 +514,7 @@ const LandingPage = () => {
       {/* <!--Availability Form--> */}
       <section
         class="availability-form"
-        style={{ backgroundImage: "url(images/background/1.png)" }}
+        style={{ backgroundImage: "url(images/background/1.png)"  }}
       >
         <div class="auto-container">
           {/* <!--Availability Inner--> */}
@@ -525,6 +522,7 @@ const LandingPage = () => {
             class="availability-inner wow fadeInUp"
             data-wow-delay="0ms"
             data-wow-duration="1500ms"
+             style={{ paddingTop: "100px" }}
           >
             {/* <!--Title Box--> */}
             <div
@@ -536,7 +534,7 @@ const LandingPage = () => {
             <div class="lower-box">
               <form
                 method="post"
-                action="http://world5.commonsupport.com/html2/queenstown/contact.html"
+                action="http://world5.commonsupport.com/html2/book my farm/contact.html"
               >
                 <div class="row clearfix">
                   {/* <!-- Column / Form Group --> */}
@@ -544,7 +542,7 @@ const LandingPage = () => {
                     <div class="form-group">
                       <input
                         class="datepicker"
-                        type="text"
+                        type="date"
                         placeholder="Check In Date"
                       />
                       <label class="flaticon-calendar"></label>
@@ -556,7 +554,7 @@ const LandingPage = () => {
                     <div class="form-group">
                       <input
                         class="datepicker"
-                        type="text"
+                        type="date"
                         placeholder="Check Out Date"
                       />
                       <label class="flaticon-calendar"></label>
@@ -607,13 +605,13 @@ const LandingPage = () => {
                   </div>
 
                   {/* <!-- Column / Form Group --> */}
-                  <div class="column col-lg-2 col-sm-4 col-md-4 col-xs-12">
+                  {/* <div class="column col-lg-2 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                       <button type="submit" class="theme-btn btn-style-one">
                         BOOK NOW
                       </button>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </form>
             </div>
@@ -643,26 +641,27 @@ const LandingPage = () => {
               <div class="content-column col-md-5 col-sm-12 col-xs-12">
                 <div class="inner-box">
                   <div class="sec-title-one">
-                    <h2>Luxury Room</h2>
+                    <h2>Why BookMyFarm?</h2>
                     <div class="separator-icon"></div>
                     <div class="text">
-                      They call him Flipper Flipper faster than lightning no one
-                      you see is smarter than he black gold all of them had hair
-                      of gold like young one in curls.
-                    </div>
-                    <div class="price">
-                      $350
-                      <span>
-                        PER
-                        <br />
-                        NIGHT
-                      </span>
-                    </div>
-                    {/* <!--Btn Book--> */}
-                    <div class="btn-book">
-                      <a  class="book-btn btn-style-one">
-                        Book Now
-                      </a>
+                      <ul>
+                        <li>
+                          100% Verified Listings: Every property is inspected
+                          and approved by our team.
+                        </li>
+                        <li>
+                          Transparent Pricing: No hidden fees—what you see is
+                          what you pay.
+                        </li>
+                        <li>
+                          Professional Photos & Virtual Tours: Know exactly what
+                          you’re getting.
+                        </li>
+                        <li>
+                          Customizable Add-Ons: From bonfire setups to full
+                          catering packages.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -696,7 +695,7 @@ const LandingPage = () => {
                     <div className="inner-box">
                       <figure className="image-box">
                         <img src={room.image} alt={room.title} />
-                        <div className="overlay-box">
+                        {/* <div className="overlay-box">
                           <div className="inner-box">
                             <div className="content">
                               <div className="icon-box">
@@ -707,10 +706,10 @@ const LandingPage = () => {
                               <h3>{room.title}</h3>
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                       </figure>
                       <h3>
-                        <a >{room.title}</a>
+                        <a>{room.title}</a>
                       </h3>
                     </div>
                   </div>
@@ -727,11 +726,14 @@ const LandingPage = () => {
         <div class="auto-container">
           {/* <!--Sec Title One--> */}
           <div class="sec-title-two">
-            <h2>Welcome to Queenstown</h2>
+            <h2>Welcome to Book My Farm</h2>
             <div class="separator-icon"></div>
             <div class="text">
-              Flipper Flipper faster than lightning no one you see is smarter
-              than he black gold young one in curls
+              Escape to Your Private Farmhouse Retreat in Indore & Beyond
+            </div>
+            <div class="text">
+              Discover and book from 1,000+ verified farmhouses across India,
+              starting at Rs. 5,000
             </div>
           </div>
 
@@ -753,29 +755,28 @@ const LandingPage = () => {
               <div class="content-column col-md-6 col-sm-6 col-xs-12">
                 <div class="inner-box">
                   <div class="sec-title-three">
-                    <h2>We Enhance Our New Era</h2>
+                    <h2>How It Works</h2>
                     <div class="text">
-                      <p>
-                        They call him Flipper Flipper faster than lightning no
-                        one you see is smarter than he black gold all of them
-                        had hair of gold like their mother the young one in
-                        curls never heard the word impossible you wanna be where
-                        you can see our troubles are all the same you wanna be
-                        where everybody knows your name.
-                      </p>
-                      <p>
-                        The smarter than he black gold all of them had hair of
-                        gold like their mother the young one in curls never
-                        heard the word impossible you wanna be where are all the
-                        same you wanna be where you can see our troubles.
-                      </p>
+                      <ul>
+                        <li>
+                          Search & Select: Browse curated listings by city,
+                          price range or amenities across India.
+                        </li>
+                        <li>
+                          Customize Your Stay: Add extras—DJ, BBQ, catering,
+                          decor—right in your booking flow.
+                        </li>
+                        <li>
+                          Secure Booking & Payment: Pay only 20% upfront to
+                          confirm. For questions, call our team.
+                        </li>
+                        <li>
+                          Enjoy & Review: Relax, recharge—and leave an honest
+                          review to help fellow travelers. .
+                        </li>
+                      </ul>
                     </div>
-                    <a
-                      
-                      class="read-more theme-btn btn-style-one"
-                    >
-                      Read More
-                    </a>
+                    <a class="read-more theme-btn btn-style-one">Read More</a>
                   </div>
                 </div>
               </div>
@@ -790,11 +791,13 @@ const LandingPage = () => {
         <div class="auto-container">
           {/* <!--Sec Title Two--> */}
           <div class="sec-title-two">
-            <h2>Nearby Attractive Spots</h2>
+            <h2>About Us</h2>
             <div class="separator-icon"></div>
             <div class="text">
-              Flipper Flipper faster than lightning no one you see is smarter
-              than he black gold young one in curls never heard the word{" "}
+              At BookMyFarm, based in Indore, we’re on a mission to bring urban
+              explorers closer to nature. Our platform features the best private
+              farmhouses across India—from serene Indore retreats to scenic
+              properties in Goa, Rishikesh, Bangalore and more.
             </div>
           </div>
 
@@ -848,44 +851,36 @@ const LandingPage = () => {
               <div class="content-column left-align col-md-6 col-sm-12 col-xs-12">
                 <div class="inner-box">
                   <div class="sec-title-three">
-                    <h2>View Our Great Deals</h2>
+                    <h2>Featured Add-On Services</h2>
                     <div class="text">
-                      They call him Flipper Flipper faster than lightning no one
-                      you see is smarter than he black gold all of them had hair
-                      of gold like their mother the young one in curls never
-                      heard the word impossible you wanna be where you can see
-                      our troubles.
+                      Only pay 20% to confirm your booking, or call our team to clear any doubts.
                     </div>
                   </div>
 
                   {/* <!--List Style One--> */}
                   <ul class="list-style-one">
                     <li>
-                      <span class="icon flaticon-big-pizza-slice"></span>TASTY
-                      RESTAURANT
+                      <span class="icon flaticon-reuse"></span>DJ & Live Music
                     </li>
                     <li>
-                      <span class="icon flaticon-shape-1"></span>PURIFIED
-                      DRINKING WATER
+                      <span class="icon flaticon-reuse"></span>Gourmet BBQ &
+                      Catering
                     </li>
                     <li>
-                      <span class="icon flaticon-weather-2"></span>NATURAL
-                      ENVIRONMENT
+                      <span class="icon flaticon-reuse"></span>Bonfire & Decor
+                      Packages
                     </li>
                     <li>
-                      <span class="icon flaticon-wifi"></span>HIGH SPEED WIFI
+                      <span class="icon flaticon-reuse"></span>Outdoor Games &
+                      Activities
                     </li>
                     <li>
-                      <span class="icon flaticon-reuse"></span>CLEAN INTERIORS{" "}
+                      <span class="icon flaticon-reuse"></span>Photography &
+                      Drone Tours
                     </li>
-                    <li class="read-btn">
-                      <a
-                        
-                        class="theme-btn btn-style-one"
-                      >
-                        Read More
-                      </a>
-                    </li>
+                    {/* <li class="read-btn">
+                      <a class="theme-btn btn-style-one">Read More</a>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -893,9 +888,8 @@ const LandingPage = () => {
           </div>
 
           {/* <!--Spot Box--> */}
-          <div class="spot-box">
+          {/* <div class="spot-box">
             <div class="row clearfix">
-              {/* <!--Content Column / Right Align--> */}
               <div class="content-column right-align col-md-6 col-sm-12 col-xs-12">
                 <div class="inner-box">
                   <div class="sec-title-three">
@@ -908,7 +902,6 @@ const LandingPage = () => {
                       our troubles.
                     </div>
                   </div>
-                  {/* <!--List Style One--> */}
                   <ul class="list-style-one">
                     <li>
                       <span class="icon flaticon-big-pizza-slice"></span>TASTY
@@ -929,21 +922,14 @@ const LandingPage = () => {
                       <span class="icon flaticon-reuse"></span>CLEAN INTERIORS{" "}
                     </li>
                     <li class="read-btn">
-                      <a
-                        
-                        class="theme-btn btn-style-one"
-                      >
-                        Read More
-                      </a>
+                      <a class="theme-btn btn-style-one">Read More</a>
                     </li>
                   </ul>
                 </div>
               </div>
 
-              {/* <!--Featured Column--> */}
               <div class="featured-column col-md-6 col-sm-12 col-xs-12">
                 <div class="row clearfix">
-                  {/* <!--Image Column--> */}
                   <div class="image-block col-md-12 col-xs-12">
                     <figure class="image-box">
                       <a
@@ -956,7 +942,6 @@ const LandingPage = () => {
                     </figure>
                   </div>
 
-                  {/* <!--Image Column--> */}
                   <div class="image-block col-md-6 col-sm-6 col-xs-12">
                     <figure class="image-box">
                       <a
@@ -969,7 +954,6 @@ const LandingPage = () => {
                     </figure>
                   </div>
 
-                  {/* <!--Image Column--> */}
                   <div class="image-block col-md-6 col-sm-6 col-xs-12">
                     <figure class="image-box">
                       <a
@@ -984,7 +968,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* <!--End Attractive Spots Section--> */}
@@ -1026,7 +1010,7 @@ const LandingPage = () => {
               </Swiper>
 
               {/* Thumbs Carousel */}
-              <div className="client-thumb-outer mt-4">
+              {/* <div className="client-thumb-outer mt-4">
                 <Swiper
                   modules={[Thumbs]}
                   onSwiper={setThumbsSwiper}
@@ -1052,7 +1036,7 @@ const LandingPage = () => {
                     </SwiperSlide>
                   ))}
                 </Swiper>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -1060,7 +1044,7 @@ const LandingPage = () => {
       {/* <!--End Client Carousel--> */}
 
       {/* <!--News Section--> */}
-      <section class="news-section">
+      {/* <section class="news-section">
         <div class="auto-container">
           <div class="sec-title-two">
             <h2>Latest Events & News</h2>
@@ -1071,14 +1055,11 @@ const LandingPage = () => {
             </div>
           </div>
 
-          {/* <!--News Inner--> */}
+          
           <div class="news-inner">
             <div class="row clearfix">
-              {/* <!--Carousel Column--> */}
               <div class="carousel-column col-md-6 col-sm-12 col-xs-12">
-                {/* <!--Inner Box--> */}
                 <div class="inner-box">
-                  {/* <!--Single Item Carousel--> */}
                   <div class="single-item-carousel">
                     <Swiper
                       modules={[Autoplay, Navigation, Pagination]}
@@ -1102,38 +1083,33 @@ const LandingPage = () => {
                 </div>
               </div>
 
-              {/* <!--News Column--> */}
               <div class="news-column col-md-6 col-sm-12 col-xs-12">
-                {/* <!--News Block--> */}
                 <div class="news-block col-md-6 col-sm-6 col-xs-12">
                   <div class="inner-box">
-                    {/* <!--Image Box--> */}
                     <figure class="image-box">
-                      <a >
+                      <a>
                         <img src="images/resource/news-2.jpg" alt="" />
                       </a>
                       <div class="date">
                         26 <span>Apr</span>
                       </div>
                     </figure>
-                    {/* <!--Lower Content--> */}
                     <div class="lower-content">
-                      {/* <!--Outer Link--> */}
                       <div class="outer-link clearfix">
                         <div class="author pull-left">
                           <span>Posted By: </span>Jamun James
                         </div>
                         <div class="meta pull-right">
-                          <a >
+                          <a>
                             <span class="icon flaticon-favorite"></span> 14
                           </a>{" "}
-                          <a >
+                          <a>
                             <span class="icon flaticon-comments"></span> 08
                           </a>
                         </div>
                       </div>
                       <h3>
-                        <a >
+                        <a>
                           The lightning no one you see is the smarter than black
                         </a>
                       </h3>
@@ -1142,7 +1118,7 @@ const LandingPage = () => {
                         smarter than he black gold all of them had hair of gold
                         like their mother the young one in curls.
                       </div>
-                      <a class="read-more" >
+                      <a class="read-more">
                         Read more{" "}
                         <span class="arrow fa fa-angle-double-right"></span>
                       </a>
@@ -1150,45 +1126,39 @@ const LandingPage = () => {
                   </div>
                 </div>
 
-                {/* <!--News Block--> */}
                 <div class="news-block col-md-6 col-sm-6 col-xs-12">
                   <div class="inner-box">
-                    {/* <!--Image Box--> */}
                     <figure class="image-box">
-                      <a >
+                      <a>
                         <img src="images/resource/news-3.jpg" alt="" />
                       </a>
                       <div class="date">
                         04 <span>May</span>
                       </div>
                     </figure>
-                    {/* <!--Lower Content--> */}
                     <div class="lower-content">
-                      {/* <!--Outer Link--> */}
                       <div class="outer-link clearfix">
                         <div class="author pull-left">
                           <span>Posted By: </span>Jamun James
                         </div>
                         <div class="meta pull-right">
-                          <a >
+                          <a>
                             <span class="icon flaticon-favorite"></span> 11
                           </a>{" "}
-                          <a >
+                          <a>
                             <span class="icon flaticon-comments"></span> 10
                           </a>
                         </div>
                       </div>
                       <h3>
-                        <a >
-                          The young one in curls never heard the word
-                        </a>
+                        <a>The young one in curls never heard the word</a>
                       </h3>
                       <div class="text">
                         They call him faster than lightning no one you see is
                         smarter than he black gold all of them had hair of gold
                         like their mother the young one in curls.
                       </div>
-                      <a class="read-more" >
+                      <a class="read-more">
                         Read more{" "}
                         <span class="arrow fa fa-angle-double-right"></span>
                       </a>
@@ -1199,224 +1169,85 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!--End News Section--> */}
 
       {/* <!--Main Footer--> */}
       <footer class="main-footer">
         <div class="auto-container">
-          {/* <!--sponsors style One--> */}
-          <div className="sponsors-style-one">
-      <div className="sponsors-outer">
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={30}
-          slidesPerView={5}
-          loop={true}
-          autoplay={{ delay: 2500 }}
-          breakpoints={{
-            0: { slidesPerView: 2 },
-            576: { slidesPerView: 3 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 5 },
-          }}
-          className="sponsors-carousel"
-        >
-          {sponsorImages.map((src, index) => (
-            <SwiperSlide key={index}>
-              <li className="slide-item">
-                <figure className="image-box">
-                  <a >
-                    <img src={src} alt={`Sponsor ${index + 1}`} />
-                  </a>
-                </figure>
-              </li>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </div>
+          {/* <div className="sponsors-style-one">
+            <div className="sponsors-outer">
+              <Swiper
+                modules={[Autoplay]}
+                spaceBetween={30}
+                slidesPerView={5}
+                loop={true}
+                autoplay={{ delay: 2500 }}
+                breakpoints={{
+                  0: { slidesPerView: 2 },
+                  576: { slidesPerView: 3 },
+                  768: { slidesPerView: 4 },
+                  1024: { slidesPerView: 5 },
+                }}
+                className="sponsors-carousel"
+              >
+                {sponsorImages.map((src, index) => (
+                  <SwiperSlide key={index}>
+                    <li className="slide-item">
+                      <figure className="image-box">
+                        <a>
+                          <img src={src} alt={`Sponsor ${index + 1}`} />
+                        </a>
+                      </figure>
+                    </li>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div> */}
 
           <div class="row clearfix">
-            {/* <!--Big Column--> */}
             <div class="big-column col-md-6 col-sm-12 col-xs-12">
               <div class="row clearfix">
-                {/* <!-- Footer Widgets / Logo Widget --> */}
                 <div class="footer-column col-lg-8 col-md-7 col-sm-6 col-xs-12">
                   <div class="footer-widget logo-widget">
-                    <div class="footer-logo">
-                      <a >
-                        <img src="../assets/logo.jpeg" alt="" />
+                    <div class="footer-logo" style={{marginTop:"20px"}}>
+                      <a>
+                        <img src={logo} alt=""  width="auto" height="50px" />
                       </a>
                     </div>
-                    <div class="text">
+                    {/* <div class="text">
                       They call him Flipper Flipper faster than lightning no one
                       you see is smarter than he black gold all of them had hair
                       of gold like their mother the young one.
-                    </div>
-                    {/* <!--Social Style Two--> */}
+                    </div> */}
                     <ul class="social-icon-two">
                       <li>
-                        <a class="fa fa-facebook-f" ></a>
+                        <a class="fa fa-facebook-f"></a>
                       </li>
                       <li>
-                        <a class="fa fa-twitter" ></a>
+                        <a class="fa fa-twitter"></a>
                       </li>
                       <li>
-                        <a class="fa fa-google-plus" ></a>
+                        <a class="fa fa-google-plus"></a>
                       </li>
                       <li>
-                        <a class="fa fa-instagram" ></a>
+                        <a class="fa fa-instagram"></a>
                       </li>
                       <li>
-                        <a class="fa fa-github" ></a>
+                        <a class="fa fa-github"></a>
                       </li>
                     </ul>
                   </div>
                 </div>
 
-                {/* <!-- Footer Widgets / Links Widget --> */}
-                <div class="footer-column col-lg-4 col-md-5 col-sm-6 col-xs-12">
-                  <div class="footer-widget links-widget">
-                    {/* <!--Footer Title--> */}
-                    <div class="footer-title">
-                      <h2>Information Links</h2>
-                    </div>
-                    <ul>
-                      <li>
-                        <a >Site Map</a>
-                      </li>
-                      <li>
-                        <a >Search Terms</a>
-                      </li>
-                      <li>
-                        <a >Advanced Search</a>
-                      </li>
-                      <li>
-                        <a >Reservations</a>
-                      </li>
-                      <li>
-                        <a >Contact us</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
 
-            {/* <!--Big Column--> */}
-            <div class="big-column col-md-6 col-sm-12 col-xs-12">
-              <div class="row clearfix">
-                {/* <!-- Footer Widgets / Links Widget --> */}
-                <div class="footer-column col-lg-5 col-md-5 col-sm-6 col-xs-12">
-                  <div class="footer-widget links-widget">
-                    {/* <!--Footer Title--> */}
-                    <div class="footer-title">
-                      <h2>Inquires</h2>
-                    </div>
-                    <ul>
-                      <li>
-                        <a >Accommodations</a>
-                      </li>
-                      <li>
-                        <a >Photos & Videos</a>
-                      </li>
-                      <li>
-                        <a >Services & Amenities</a>
-                      </li>
-                      <li>
-                        <a >Restaurants</a>
-                      </li>
-                      <li>
-                        <a >Destinations</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* <!--Newsletter Form--> */}
-                <div class="footer-column col-lg-7 col-md-7 col-sm-6 col-xs-12">
-                  <div class="footer-widget newsletter-form">
-                    {/* <!--Footer Title--> */}
-                    <div class="footer-title">
-                      <h2>Newsletters</h2>
-                    </div>
-                    {/* <!--Form--> */}
-                    <form
-                      method="post"
-                      action="http://world5.commonsupport.com/html2/queenstown/contact.html"
-                    >
-                      <div class="row clearfix">
-                        {/* <!--Form Group--> */}
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              name="text"
-                              value=""
-                              placeholder="Name"
-                              required
-                            />
-                          </div>
-                        </div>
-                        {/* <!--Form Group-->  */}
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                          <div class="form-group">
-                            <input
-                              type="email"
-                              name="email"
-                              value=""
-                              placeholder="Email ID"
-                              required
-                            />
-                          </div>
-                        </div>
-                        {/* <!--Form Group--> */}
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                          <div class="form-group button-group">
-                            <button
-                              type="submit"
-                              class="btn-style-two theme-btn"
-                            >
-                              SUBSCRIBE
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
 
-          {/* <!--Footer Bottom--> */}
-          <div class="footer-bottom">
-            <div class="row clearfix">
-              <div class="column col-md-6 col-sm-6 col-xs-12">
-                <div class="copyright">&copy; asdf</div>
-              </div>
-              <div class="column col-md-6 col-sm-6 col-xs-12 text-right">
-                <ul class="cards">
-                  <li>
-                    <a class="fa fa-cc-visa" ></a>
-                  </li>
-                  <li>
-                    <a class="fa fa-cc-mastercard" ></a>
-                  </li>
-                  <li>
-                    <a class="fa fa-cc-paypal" ></a>
-                  </li>
-                  <li>
-                    <a class="fa fa-cc-discover" ></a>
-                  </li>
-                  <li>
-                    <a class="fa fa-cc-stripe" ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </footer>
     </div>

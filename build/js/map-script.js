@@ -98,7 +98,7 @@ function GmapInit() {
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "color": "#333333"
+                "color": "#26115C"
             }
         ]
     },
